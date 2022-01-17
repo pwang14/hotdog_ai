@@ -1,0 +1,36 @@
+{% extends 'base.html' %}
+
+{% block head %}
+<title>SeeFood</title>
+{% endblock %}
+
+{% block body %}
+<div class="content">
+    <h1>SeeFood</h1>
+
+    {% if img_path is defined %}
+        <img src={{img_path}}>
+    {% else %}
+        <p>No image</p>
+    {% endif %}
+
+    {% if guess == 1 %}
+        <h4>Hotdog</h4>
+    {% elif guess == 0 %}
+        <h4>Not hotdog</h4>
+    {% else %}
+        <h4>No guess</h4>
+    {% endif %}
+
+    {% if error is defined %}
+        <h4>{{error}}</h4>
+    {% endif %}
+
+    <form action="/" method="POST" enctype="multipart/form-data">
+        <label for="image">Provide a jpg image</label>
+        <br>
+        <input type="file" id="image" name="image" accept="image/jpeg">
+        <input type="submit" value="Submit image">
+    </form>
+</div>
+{% endblock %}
