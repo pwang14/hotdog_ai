@@ -2,7 +2,6 @@ from tokenize import PlainToken
 import os
 from os import path
 import PIL
-from app import UPLOAD_FOLDER
 
 #os.environ['TF_CPP_MIN_LOG_LEVEL'] = '2'
 
