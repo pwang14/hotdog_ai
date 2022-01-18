@@ -5,4 +5,6 @@ Project uses TensorFlow library through Keras API. Uses deep learning to classif
 Currently this is a very small project to familiarize myself with Tensorflow. With more experimenting and training techniques, I hope to increase the accuracy of the network.
 I also want to improve the functionality of the web app, and make the front end look nicer.
 
+The data was retrieved from Kaggle, but still requires quite a bit of cleanup.
+
 Deployed on Heroku. https://flask-hotdogai.herokuapp.com/. Again, this web app is just a prototype and does not have the security, persistence and authentication features a normal web app would have. Use in a very limited manner.
